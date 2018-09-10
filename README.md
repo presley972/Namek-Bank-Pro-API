@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/presley972/Namek-Bank-Pro-API.svg?branch=master)](https://travis-ci.com/presley972/Namek-Bank-Pro-API)
 
 # Namek Bank Pro API by Presley
 
