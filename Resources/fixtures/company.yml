@@ -1,0 +1,15 @@
+App\Entity\Company:
+    company_1:
+        name: 'Company1'
+        slogan: 'Pour tous'
+        phoneNumber: <phoneNumber()>
+        address: <address()>
+        websiteUrl: <url()>
+        pictureUrl: <imageUrl()>
+    company_{2..10}:
+        name: <company()>
+        slogan: <catchPhrase()>
+        phoneNumber: <phoneNumber()>
+        address: <address()>
+        websiteUrl: <url()>
+        pictureUrl: <imageUrl()>

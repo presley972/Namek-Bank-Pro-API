@@ -1,0 +1,31 @@
+App\Entity\Master:
+    master_1:
+        firstname: Presley
+        lastname: Admin
+        email: presley@admin.com
+        apiKey: '5b7fd37c2995a9.89857955'
+        roles: [ROLE_ADMIN, ROLE_USER]
+        company: '@company_1'
+    master_2:
+        firstname: Jean-Paul
+        lastname: Go
+        email: jp@gmail.com
+        company: '@company_2'
+        apiKey: '5b7fd37c29d9f1.52897532'
+    master_3:
+        firstname: Guy-F
+        lastname: Lacost
+        email: gf@gmail.com
+        company: '@company_3'
+        apiKey: '5b7fd37c29d9f1.52475123'
+    master_4:
+        firstname: Regis
+        lastname: zeneger
+        email: rz@gmail.com
+        company: '@company_4'
+        apiKey: '5b7fd37c29d9f1.48751390'
+    master_{5..10}:
+        firstname: <firstName()>
+        lastname: <lastName()>
+        email: <email()>
+        company: '@company_<current()>'
