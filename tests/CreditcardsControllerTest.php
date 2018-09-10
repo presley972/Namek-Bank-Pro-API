@@ -225,7 +225,7 @@ class CreditcardsControllerTest extends WebTestCase
                 'CONTENT_TYPE' => 'application/json',
                 'HTTP_AUTH-TOKEN' => '5b7fd37c2995a9.89857955',
             ],
-            '{"name":"My creditcard 11","creditCardType":"Visa","creditCardNumber":"1111111111111111","company":{"id":1,"name":"Adams-Reichel"}}'
+            '{"name":"creditcard ","creditCardType":"Visa","creditCardNumber":"0123456789101112","company":{"id":1,"name":"Adams-Reichel"}}'
         );
 
         $response = $client->getResponse();
@@ -240,9 +240,9 @@ class CreditcardsControllerTest extends WebTestCase
 
     public function testUserPostCreditcards(){
         $data = [
-            "name" => "My creditcard 12",
+            "name" => "blackcreditcard ",
             "creditCardType"=> "Visa Retired",
-            "creditCardNumber"=> "22222222222222",
+            "creditCardNumber"=> "0123456789101112",
             "company"=> ["id"=>1]
         ];
 
@@ -256,7 +256,7 @@ class CreditcardsControllerTest extends WebTestCase
                 'CONTENT_TYPE' => 'application/json',
                 'HTTP_AUTH-TOKEN' => '5b7fd37c29d9f1.52897532',
             ],
-            '{"name":"My creditcard 12","creditCardType":"Visa Retired","creditCardNumber":"22222222222222","company":{"id":2,"name":"Put Company 1"}}'
+            '{"name":"regulard creditcard ","creditCardType":"Visa Retired","creditCardNumber":"0123456789101112","company":{"id":2,"name":"Put Company 1"}}'
         );
 
         $response = $client->getResponse();
@@ -270,9 +270,9 @@ class CreditcardsControllerTest extends WebTestCase
 
     public function testAnonymousPostCreditcards(){
         $data = [
-            "name" => "My creditcard 13",
+            "name" => "young creditcard ",
             "creditCardType"=> "MasterCard",
-            "creditCardNumber"=> "3333333333333333",
+            "creditCardNumber"=> "0123456789101112",
             "company"=> ["id"=>1]
         ];
 

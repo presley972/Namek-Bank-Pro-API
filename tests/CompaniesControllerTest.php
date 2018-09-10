@@ -136,10 +136,10 @@ class CompaniesControllerTest extends WebTestCase
 
     public function testAdminPostCompanies(){
         $data = [
-            "name" => "Company of official test",
-            "slogan"=> "Here we test, it s innovation",
-            "phoneNumber"=> "0606060606",
-            "address"=> "32, rue du test 75000 Paris"
+            "name" => "Presley company",
+            "slogan"=> "A l'écoute de nos client",
+            "phoneNumber"=> "0601020304",
+            "address"=> "50, avenue du laugier 93440 Dugny"
         ];
 
         $client = static::createClient();
@@ -167,10 +167,10 @@ class CompaniesControllerTest extends WebTestCase
 
     public function testUserPostCompanies(){
         $data = [
-            "name" => "THE TEST",
-            "slogan"=> "Lorem Ipsum slogan de test",
-            "phoneNumber"=> "0707070707",
-            "address"=> "155, avenue du roi 30000 Lyon"
+            "name" => "Modif",
+            "slogan"=> "slogan de test",
+            "phoneNumber"=> "0701020304",
+            "address"=> "40, Rue lecourbe 75015 Paris"
         ];
 
         $client = static::createClient();
@@ -197,10 +197,10 @@ class CompaniesControllerTest extends WebTestCase
 
     public function testAnonymousPostCompanies(){
         $data = [
-            "name" => "Back to the past",
-            "slogan"=> "Nom de Zeus ! 88 miles à l'heure !",
-            "phoneNumber"=> "4444444444",
-            "address"=> "1, avenue de la paix 01000 TestVille"
+            "name" => "ouais mais non",
+            "slogan"=> "sa pass pas chez nous sa",
+            "phoneNumber"=> "0102030405",
+            "address"=> "jcp, jcp jcp cjp "
         ];
 
         $client = static::createClient();
@@ -245,7 +245,7 @@ class CompaniesControllerTest extends WebTestCase
 
     public function testAdminPutCompanies(){
         $data = [
-            "name" => "Put Company 1"
+            "name" => "société général"
         ];
 
         $client = static::createClient();
